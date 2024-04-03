@@ -2,10 +2,6 @@ import cv2
 import numpy as np
 
 
-
-
-
-
 def identify_fruit(image_path):
     # Use relative paths if the model files are in the same directory as your script
     prototxt_path = 'MobileNetSSD_deploy.prototxt'
@@ -67,13 +63,8 @@ def identify_fruit(image_path):
         print("Gray fruit ROI is None.")
 
 
-
-
-
-
-
 # Replace 'path/to/your/image.jpg' with the actual path to your image
-image_path = 'C:/Users/Huzaifa Khan/Desktop/College/Third_Year/IPCV/apple.jpg'
+image_path = '(enter the path where you want to save the new image)/apple.jpg'
 identify_fruit(image_path)
 
 image = cv2.imread(image_path)
